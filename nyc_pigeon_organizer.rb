@@ -2,10 +2,10 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   new_hsh = new_hash_setup(data)
-  #
+
   new_hsh.each do |name, vals|
     data.each do |key, val|
-  #     # binding.pry
+
       if new_hsh[name][key]
         val.each do |atrib, values|
           if values.include?(name)
